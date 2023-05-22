@@ -13,14 +13,14 @@ export default defineConfig({
         }
     },
     css: {
-        preprocessorOptions: {
-            scss: {
-                additionalData: `
-            // @import "./node_modules/@coreui/coreui/scss/coreui";
-            // @import "./src/styles/style.scss";
-            `
-            }
-        }
+        // preprocessorOptions: {
+        //     scss: {
+        //         additionalData: `
+        //     // @import "./node_modules/@coreui/coreui/scss/coreui";
+        //     // @import "./src/styles/style.scss";
+        //     `
+        //     }
+        // }
     },
     build: {
         rollupOptions: {

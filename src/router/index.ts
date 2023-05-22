@@ -1,13 +1,21 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import DefaultLayout from "@/layouts/DefaultLayout.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView
+      name: 'Home',
+      component: DefaultLayout,
+      redirect: '/dashboard',
+      children: [
+          {
+            path: 'dashboard',
+            name: 'Dashboard',
+            component: () => import(/* webpackChunkName: "dashboard" */ '@/views/Dashboard.vue')
+          }
+      ],
     },
     {
       path: '/about',

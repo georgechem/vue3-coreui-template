@@ -1,14 +1,11 @@
 <template>
   <CSidebar
     position="fixed"
-    :unfoldable="sidebarUnfoldable"
-    :visible="sidebarVisible"
+    :unfoldable="ui.sidebarUnfoldable"
+    :visible="ui.sidebarVisible"
     @visible-change="
       (event) =>
-        $store.commit({
-          type: 'updateSidebarVisible',
-          value: event,
-        })
+        ui.updateSidebarVisible(event)
     "
   >
     <CSidebarBrand>
@@ -26,28 +23,33 @@
     <AppSidebarNav />
     <CSidebarToggler
       class="d-none d-lg-flex"
-      @click="$store.commit('toggleUnfoldable')"
+      @click="ui.toggleUnfoldable"
     />
   </CSidebar>
 </template>
 
 <script>
-
 import { AppSidebarNav } from './AppSidebarNav'
 import { logoNegative } from '@/assets/brand/logo-negative'
 import { sygnet } from '@/assets/brand/sygnet'
+import {CSidebarToggler} from "@coreui/vue";
+import {useUiStore} from "@/stores/ui";
+
+
 export default {
   name: 'AppSidebar',
   components: {
+    CSidebarToggler,
     AppSidebarNav,
   },
   setup() {
 
+    const ui = useUiStore();
+
     return {
+      ui,
       logoNegative,
       sygnet,
-      // sidebarUnfoldable: computed(() => store.state.sidebarUnfoldable),
-      // sidebarVisible: computed(() => store.state.sidebarVisible),
     }
   },
 }

@@ -1,7 +1,7 @@
 <template>
   <CHeader position="sticky" class="mb-4">
     <CContainer fluid>
-      <CHeaderToggler class="ps-1" @click="$store.commit('toggleSidebar')">
+      <CHeaderToggler class="ps-1" @click="ui.toggleSidebar">
         <CIcon icon="cil-menu" size="lg" />
       </CHeaderToggler>
       <CHeaderBrand class="mx-auto d-lg-none" to="/">
@@ -48,15 +48,31 @@
 import AppBreadcrumb from './AppBreadcrumb.vue'
 import AppHeaderDropdownAccnt from './AppHeaderDropdownAccnt.vue'
 import { logo } from '@/assets/brand/logo'
+import {
+  CHeader, CContainer,
+  CHeaderBrand, CHeaderDivider, CHeaderNav, CHeaderToggler,
+  CNavItem, CNavLink
+} from "@coreui/vue";
+import {useUiStore} from "@/stores/ui";
+
 export default {
   name: 'AppHeader',
   components: {
+    CHeaderDivider,
+    CHeaderNav,
+    CNavLink,
+    CNavItem,
+    CHeaderToggler,
+    CHeaderBrand,
+    CContainer,
+    CHeader,
     AppBreadcrumb,
     AppHeaderDropdownAccnt,
   },
   setup() {
+    const ui = useUiStore();
     return {
-      logo,
+      logo, ui,
     }
   },
 }

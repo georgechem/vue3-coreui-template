@@ -244,7 +244,14 @@
 </template>
 
 <script>
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader,CButton,
+  CForm, CFormInput, CFormLabel, CFormTextarea,
+
+} from "@coreui/vue";
+
 export default {
   name: 'FormControl',
+  components: {CButton, CFormTextarea, CFormInput, CFormLabel, CForm, CCardBody, CCardHeader, CCard, CCol, CRow},
 }
 </script>

@@ -1021,8 +1021,16 @@
 
 <script>
 import { ref } from 'vue'
+import {CCard, CCardBody, CCardHeader,
+  CModal, CModalBody, CModalFooter, CModalHeader, CModalTitle,
+  CCol, CRow,CButton
+} from "@coreui/vue";
+
 export default {
   name: 'Modals',
+  components: {
+    CButton,
+    CModalFooter, CModalBody, CModalTitle, CModalHeader, CCardBody, CCard, CCol, CRow, CModal, CCardHeader},
   setup() {
     const visibleLiveDemo = ref(false)
     const visibleStaticBackdropDemo = ref(false)

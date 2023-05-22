@@ -14,9 +14,11 @@
 <script>
 import { onMounted, ref } from 'vue'
 import router from '@/router'
+import {CBreadcrumb, CBreadcrumbItem} from "@coreui/vue";
 
 export default {
   name: 'AppBreadcrumb',
+  components: {CBreadcrumbItem, CBreadcrumb},
   setup() {
     const breadcrumbs = ref()
 

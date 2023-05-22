@@ -656,9 +656,26 @@ import { getStyle } from '@coreui/utils'
 import { CChart } from '@coreui/vue-chartjs'
 import WidgetsStatsA from './WidgetsStatsTypeA.vue'
 import WidgetsStatsD from './WidgetsStatsTypeD.vue'
+import {CCol, CRow,CLink,
+  CCard, CCardBody, CCardGroup, CCardHeader,
+  CWidgetStatsB, CWidgetStatsC, CWidgetStatsE, CWidgetStatsF,
+
+} from "@coreui/vue";
+
 export default {
   name: 'Widgets',
   components: {
+    CWidgetStatsC,
+    CCardGroup,
+    CLink,
+    CWidgetStatsF,
+    CWidgetStatsE,
+    CWidgetStatsB,
+    CCardBody,
+    CCardHeader,
+    CCard,
+    CCol,
+    CRow,
     CChart,
     WidgetsStatsA,
     WidgetsStatsD,

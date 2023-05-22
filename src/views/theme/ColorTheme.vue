@@ -9,8 +9,11 @@
 </template>
 
 <script>
+import {CCol} from "@coreui/vue";
+
 export default {
   name: 'ColorTheme',
+  components: {CCol},
   props: {
     color: {
       type: String,

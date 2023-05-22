@@ -179,8 +179,15 @@
 
 <script>
 import { ref } from 'vue'
+import {CRow,
+  CCard, CCardBody, CCardHeader,
+  CAccordion, CAccordionBody, CAccordionHeader, CAccordionItem,
+
+} from "@coreui/vue";
+
 export default {
   name: 'Accordion',
+  components: {CAccordionBody, CAccordionHeader, CAccordionItem, CAccordion, CCardBody, CCardHeader, CCard, CRow},
   setup() {
     const activeKey = ref(1)
     const flushActiveKey = ref(1)

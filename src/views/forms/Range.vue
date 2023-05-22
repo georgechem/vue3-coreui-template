@@ -81,7 +81,13 @@
 </template>
 
 <script>
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader,
+  CFormLabel, CFormRange,
+} from "@coreui/vue";
+
 export default {
   name: 'Range',
+  components: {CFormRange, CFormLabel, CCardBody, CCardHeader, CCard, CCol, CRow},
 }
 </script>

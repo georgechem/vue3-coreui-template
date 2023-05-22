@@ -357,7 +357,14 @@
 </template>
 
 <script>
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader,
+  CListGroup, CListGroupItem,
+  CBadge,CFormCheck
+} from "@coreui/vue";
+
 export default {
   name: 'ListGroups',
+  components: {CFormCheck, CBadge, CCardBody, CListGroupItem, CListGroup, CCardHeader, CCard, CCol, CRow},
 }
 </script>

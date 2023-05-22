@@ -89,7 +89,13 @@
 </template>
 
 <script>
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader,
+  CButton,CBadge,
+} from "@coreui/vue";
+
 export default {
   name: 'Badges',
+  components: {CBadge, CButton, CCardBody, CCardHeader, CCard, CCol, CRow},
 }
 </script>

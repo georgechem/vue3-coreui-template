@@ -512,7 +512,34 @@
 </template>
 
 <script>
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader,
+  CFormCheck,
+  CFormInput,
+  CFormLabel, CFormSelect,
+  CFormTextarea,
+  CInputGroup,
+  CInputGroupText,
+  CDropdown,
+  CDropdownDivider,
+  CDropdownItem,
+  CDropdownMenu,
+  CDropdownToggle,
+  CButton,
+} from "@coreui/vue";
+
 export default {
   name: 'InputGroup',
+  components: {
+    CFormSelect,
+    CDropdownDivider,
+    CDropdownItem,
+    CDropdownMenu,
+    CDropdownToggle,
+    CDropdown,
+    CButton,
+    CFormCheck,
+    CFormTextarea,
+    CFormLabel, CFormInput, CInputGroupText, CInputGroup, CCardBody, CCardHeader, CCard, CCol, CRow},
 }
 </script>

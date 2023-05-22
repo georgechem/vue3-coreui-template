@@ -180,8 +180,14 @@
 import AngularImg from '@/assets/images/angular.jpg'
 import ReactImg from '@/assets/images/react.jpg'
 import VueImg from '@/assets/images/vue.jpg'
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader,
+  CCarousel, CCarouselCaption, CCarouselItem,
+} from "@coreui/vue";
+
 export default {
   name: 'Carousels',
+  components: {CCarouselCaption, CCard, CCarouselItem, CCarousel, CCardBody, CCardHeader, CCol, CRow},
   setup() {
     return {
       AngularImg,

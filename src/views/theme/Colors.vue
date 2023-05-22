@@ -31,9 +31,14 @@
 </template>
 
 <script>
-import ColorTheme from './ColorTheme'
+import ColorTheme from './ColorTheme.vue'
+import {
+  CRow,CCol,
+  CCard, CCardBody, CCardHeader
+} from "@coreui/vue";
+
 export default {
   name: 'Colors',
-  components: { ColorTheme },
+  components: {CCardBody, CCardHeader, CCard, CCol, CRow, ColorTheme },
 }
 </script>

@@ -32,13 +32,17 @@
 import { AppSidebarNav } from './AppSidebarNav'
 import { logoNegative } from '@/assets/brand/logo-negative'
 import { sygnet } from '@/assets/brand/sygnet'
-import {CSidebarToggler} from "@coreui/vue";
+import {CSidebarToggler,
+  CSidebar, CSidebarBrand
+} from "@coreui/vue";
 import {useUiStore} from "@/stores/ui";
 
 
 export default {
   name: 'AppSidebar',
   components: {
+    CSidebarBrand,
+    CSidebar,
     CSidebarToggler,
     AppSidebarNav,
   },

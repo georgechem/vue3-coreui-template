@@ -175,7 +175,14 @@
 </template>
 
 <script>
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader,
+  CPagination, CPaginationItem,
+
+} from "@coreui/vue";
+
 export default {
   name: 'Paginations',
+  components: {CCardBody, CPaginationItem, CPagination, CCardHeader, CCard, CCol, CRow},
 }
 </script>

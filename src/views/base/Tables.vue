@@ -987,7 +987,23 @@
 </template>
 
 <script>
+import {CCard, CCardBody, CCardHeader,
+  CTable,
+  CTableBody,
+  CTableDataCell,
+  CTableHead,
+  CTableHeaderCell,
+  CTableRow,
+  CCol, CRow,
+  CTableCaption,
+} from "@coreui/vue";
+
+
 export default {
   name: 'Tables',
+  components: {
+    CTableCaption,
+    CTableDataCell,
+    CTableBody, CTableRow, CTable, CCard, CCol, CRow, CCardBody, CTableHeaderCell, CTableHead, CCardHeader},
 }
 </script>

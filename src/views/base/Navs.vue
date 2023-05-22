@@ -346,7 +346,17 @@
 </template>
 
 <script>
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader,
+  CNav, CNavItem, CNavLink,
+  CDropdown, CDropdownItem, CDropdownMenu, CDropdownToggle,
+} from "@coreui/vue";
+
 export default {
   name: 'Navs',
+  components: {
+    CDropdownMenu,
+    CDropdownItem,
+    CDropdownToggle, CDropdown, CNavLink, CNavItem, CNav, CCardBody, CCardHeader, CCard, CCol, CRow},
 }
 </script>

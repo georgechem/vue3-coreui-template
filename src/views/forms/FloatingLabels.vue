@@ -172,7 +172,16 @@
 </template>
 
 <script>
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader,
+  CFormFloating, CFormInput, CFormLabel, CFormSelect, CFormTextarea,
+
+} from "@coreui/vue";
+
 export default {
   name: 'FloatingLabels',
+  components: {
+    CFormSelect,
+    CFormTextarea, CFormLabel, CFormInput, CFormFloating, CCardBody, CCardHeader, CCard, CCol, CRow},
 }
 </script>

@@ -452,7 +452,24 @@
 </template>
 
 <script>
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader,
+  CForm,
+  CFormCheck,
+  CFormInput,
+  CFormLabel,
+  CFormSelect,
+  CInputGroup,
+  CInputGroupText,
+  CButton,
+} from "@coreui/vue";
+
 export default {
   name: 'Layout',
+  components: {
+    CInputGroupText,
+    CInputGroup,
+    CButton,
+    CFormCheck, CFormSelect, CFormLabel, CForm, CFormInput, CCardBody, CCardHeader, CCard, CCol, CRow},
 }
 </script>

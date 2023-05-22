@@ -398,7 +398,13 @@
 </template>
 
 <script>
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader,
+  CFormCheck, CFormSwitch,
+} from "@coreui/vue";
+
 export default {
   name: 'ChecksRadios',
+  components: {CFormSwitch, CCard, CFormCheck, CCardBody, CCardHeader, CCol, CRow},
 }
 </script>

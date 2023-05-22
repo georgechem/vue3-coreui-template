@@ -1,11 +1,6 @@
 <template>
   <CRow>
     <CCol :xs="12">
-      <DocsCallout
-        name="Chart"
-        href="components/chart"
-        content="React wrapper component for Chart.js 3.0, the most popular charting library."
-      />
     </CCol>
     <CCol :md="6" class="mb-4">
       <CCard>
@@ -50,9 +45,19 @@
 
 <script>
 import * as Charts from './index.js'
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader,
+
+} from "@coreui/vue";
+
 export default {
   name: 'Charts',
   components: {
+    CCardBody,
+    CCardHeader,
+    CCard,
+    CCol,
+    CRow,
     ...Charts,
   },
 }

@@ -245,7 +245,23 @@
 </template>
 
 <script>
+import {
+  CCol, CRow,
+  CCard, CCardBody, CCardHeader,
+  CTable,
+  CTableBody,
+  CTableDataCell,
+  CTableHead,
+  CTableHeaderCell,
+  CTableRow,
+
+} from "@coreui/vue";
+
+
 export default {
   name: 'Typography',
+  components: {
+    CTableDataCell,
+    CTableBody, CTableHeaderCell, CTableRow, CTableHead, CTable, CCardBody, CCardHeader, CCard, CCol, CRow},
 }
 </script>

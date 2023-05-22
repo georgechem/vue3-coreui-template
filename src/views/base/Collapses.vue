@@ -124,8 +124,14 @@
 
 <script>
 import { ref } from 'vue'
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader,
+  CButton, CCollapse,
+} from "@coreui/vue";
+
 export default {
   name: 'Collapse',
+  components: {CCollapse, CButton, CCardBody, CCardHeader, CCard, CCol, CRow},
   setup() {
     const visible = ref(false)
     const visibleA = ref(false)

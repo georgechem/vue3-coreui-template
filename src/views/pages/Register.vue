@@ -51,7 +51,13 @@
 </template>
 
 <script>
+import {CCol, CContainer, CRow,
+  CCard, CCardBody,CButton,
+  CForm, CFormInput, CInputGroup, CInputGroupText,
+} from "@coreui/vue";
+
 export default {
   name: 'Register',
+  components: {CButton, CFormInput, CInputGroupText, CInputGroup, CCardBody, CForm, CCard, CCol, CRow, CContainer},
 }
 </script>

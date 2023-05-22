@@ -205,7 +205,13 @@
 </template>
 
 <script>
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader,
+  CProgress, CProgressBar,
+} from "@coreui/vue";
+
 export default {
   name: 'Progress',
+  components: {CProgressBar, CProgress, CCardBody, CCardHeader, CCard, CCol, CRow},
 }
 </script>

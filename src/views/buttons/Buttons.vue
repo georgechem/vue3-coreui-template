@@ -436,7 +436,13 @@
 </template>
 
 <script>
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader,
+  CButton,
+} from "@coreui/vue";
+
 export default {
   name: 'Buttons',
+  components: {CButton, CCardBody, CCardHeader, CCard, CCol, CRow},
 }
 </script>

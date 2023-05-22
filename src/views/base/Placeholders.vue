@@ -176,8 +176,14 @@
 
 <script>
 import VueImg from '@/assets/images/vue.jpg'
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader, CCardImage, CCardText, CCardTitle,
+  CButton,CPlaceholder,
+} from "@coreui/vue";
+
 export default {
   name: 'Placeholders',
+  components: {CCardText, CPlaceholder, CButton, CCardTitle, CCardImage, CCardBody, CCardHeader, CCard, CCol, CRow},
   setup() {
     return {
       VueImg,

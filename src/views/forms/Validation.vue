@@ -477,8 +477,25 @@
 </template>
 
 <script>
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader,
+  CForm, CFormCheck,
+  CFormFeedback,
+  CFormInput,
+  CFormLabel, CFormSelect, CFormTextarea,
+  CInputGroup,
+  CInputGroupText,CButton,
+} from "@coreui/vue";
+
 export default {
   name: 'Validation',
+  components: {
+    CFormTextarea,
+    CButton,
+    CFormCheck,
+    CFormSelect,
+    CInputGroupText,
+    CInputGroup, CFormFeedback, CFormInput, CFormLabel, CForm, CCardBody, CCardHeader, CCard, CCol, CRow},
   data: () => {
     return {
       validatedCustom01: null,

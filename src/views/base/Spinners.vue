@@ -124,7 +124,13 @@
 </template>
 
 <script>
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader,
+  CSpinner, CButton,
+} from "@coreui/vue";
+
 export default {
   name: 'Spinners',
+  components: {CButton, CCardBody, CSpinner, CCardHeader, CCard, CCol, CRow},
 }
 </script>

@@ -81,8 +81,7 @@
               <CCardBody>
                 <CCardTitle>Card title</CCardTitle>
                 <CCardSubtitle class="mb-2 text-medium-emphasis"
-                  >Card subtitle</CCardSubtitle
-                >
+                  >Card subtitle</CCardSubtitle>
                 <CCardText>
                   Some quick example text to build on the card title and make up
                   the bulk of the card&#39;s content.
@@ -971,8 +970,32 @@
 
 <script>
 import VueImg from '@/assets/images/vue.jpg'
+import {
+  CCard,
+  CCardBody, CCardFooter, CCardGroup,
+  CCardHeader,
+  CCardImage, CCardLink,
+  CCardSubtitle,
+  CCardText,
+  CCardTitle,
+  CCol, CRow,CButton,
+  CListGroup, CListGroupItem,
+  CNav, CNavItem, CNavLink,
+
+} from "@coreui/vue";
+
 export default {
   name: 'Cards',
+  components: {
+    CCardGroup,
+    CNavLink,
+    CNavItem,
+    CNav,
+    CCardFooter,
+    CListGroupItem,
+    CListGroup,
+    CCardLink,
+    CCardSubtitle, CButton, CCardText, CCardTitle, CCardImage, CCardBody, CCard, CCol, CRow, CCardHeader},
   setup() {
     return {
       VueImg,

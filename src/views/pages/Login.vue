@@ -64,7 +64,16 @@
 </template>
 
 <script>
+import {CCol, CContainer, CRow,
+  CCard, CCardBody, CCardGroup,
+  CForm, CFormInput, CInputGroup, CInputGroupText,
+  CButton,
+} from "@coreui/vue";
+
 export default {
   name: 'Login',
+  components: {
+    CCard,
+    CButton, CFormInput, CInputGroupText, CInputGroup, CForm, CCardBody, CCardGroup, CCol, CRow, CContainer},
 }
 </script>

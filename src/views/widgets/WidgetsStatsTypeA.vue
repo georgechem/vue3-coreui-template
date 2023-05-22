@@ -370,9 +370,20 @@
 
 <script>
 import { CChart } from '@coreui/vue-chartjs'
+import {CCol, CRow,CWidgetStatsA,
+  CDropdown, CDropdownItem, CDropdownMenu, CDropdownToggle,
+} from "@coreui/vue";
+
 export default {
   name: 'WidgetsStatsA',
   components: {
+    CDropdownItem,
+    CDropdownMenu,
+    CDropdownToggle,
+    CDropdown,
+    CWidgetStatsA,
+    CCol,
+    CRow,
     CChart,
   },
 }

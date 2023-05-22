@@ -22,8 +22,13 @@
 </template>
 
 <script>
+import {CNav, CNavItem, CNavLink,
+  CTabContent, CTabPane,
+} from "@coreui/vue";
+
 export default {
   name: 'DocsExample',
+  components: {CTabPane, CTabContent, CNavLink, CNavItem, CNav},
   props: {
     href: {
       type: String,

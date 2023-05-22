@@ -145,8 +145,14 @@
 </template>
 
 <script>
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader,
+  CAlert, CAlertHeading, CAlertLink,
+} from "@coreui/vue";
+
 export default {
   name: 'Alerts',
+  components: {CAlertHeading, CAlertLink, CAlert, CCardBody, CCardHeader, CCard, CCol, CRow},
   methods: {
     alert: function () {
       alert('👋 Well, hi there! Thanks for dismissing me.')

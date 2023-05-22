@@ -107,7 +107,13 @@
 </template>
 
 <script>
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader,
+  CFormSelect,
+} from "@coreui/vue";
+
 export default {
   name: 'Select',
+  components: {CFormSelect, CCardBody, CCardHeader, CCard, CCol, CRow},
 }
 </script>

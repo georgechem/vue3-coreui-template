@@ -56,7 +56,14 @@
 </template>
 
 <script>
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader,
+  CBreadcrumb, CBreadcrumbItem,
+  CLink,
+} from "@coreui/vue";
+
 export default {
   name: 'Breadcrumbs',
+  components: {CLink, CBreadcrumbItem, CBreadcrumb, CCardBody, CCardHeader, CCard, CCol, CRow},
 }
 </script>

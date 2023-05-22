@@ -47,8 +47,20 @@
 
 <script>
 import avatar from '@/assets/images/avatars/8.jpg'
+import {
+  CDropdown, CDropdownDivider,
+  CDropdownHeader,
+  CDropdownItem,
+  CDropdownMenu,
+  CDropdownToggle,
+  CAvatar,CBadge,
+} from "@coreui/vue";
+
 export default {
   name: 'AppHeaderDropdownAccnt',
+  components: {
+    CDropdownDivider,
+    CDropdownHeader, CBadge, CDropdownItem, CDropdownMenu, CAvatar, CDropdownToggle, CDropdown},
   setup() {
     return {
       avatar: avatar,

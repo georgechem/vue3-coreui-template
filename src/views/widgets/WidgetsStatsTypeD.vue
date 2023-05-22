@@ -173,9 +173,14 @@
 
 <script>
 import { CChart } from '@coreui/vue-chartjs'
+import {CCol, CRow, CWidgetStatsD} from "@coreui/vue";
+
 export default {
   name: 'WidgetsStatsD',
   components: {
+    CWidgetStatsD,
+    CCol,
+    CRow,
     CChart,
   },
   setup() {

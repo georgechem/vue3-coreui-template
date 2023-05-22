@@ -355,7 +355,24 @@
 </template>
 
 <script>
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader,
+  CDropdown,
+  CDropdownDivider,
+  CDropdownItem,
+  CDropdownMenu,
+  CDropdownToggle,
+  CButton,
+  CButtonGroup,
+
+} from "@coreui/vue";
+
 export default {
   name: 'Dropdowns',
+  components: {
+    CButtonGroup,
+    CButton,
+    CDropdownDivider,
+    CDropdownItem, CDropdownMenu, CDropdownToggle, CDropdown, CCardBody, CCardHeader, CCard, CCol, CRow},
 }
 </script>

@@ -14,7 +14,10 @@
 </template>
 
 <script>
+import {CFooter} from "@coreui/vue";
+
 export default {
   name: 'AppFooter',
+  components: {CFooter},
 }
 </script>

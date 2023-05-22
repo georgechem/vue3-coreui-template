@@ -74,7 +74,13 @@
 </template>
 
 <script>
+import {CCol, CRow,
+  CCard, CCardBody, CCardHeader,
+  CButton, CLink,
+} from "@coreui/vue";
+
 export default {
   name: 'Tooltips',
+  components: {CLink, CButton, CCardBody, CCardHeader, CCard, CCol, CRow},
 }
 </script>

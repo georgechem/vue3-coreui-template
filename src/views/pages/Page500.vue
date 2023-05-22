@@ -24,7 +24,13 @@
 </template>
 
 <script>
+import {CCol, CContainer, CRow,
+  CFormInput, CInputGroup, CInputGroupText,
+  CButton,
+} from "@coreui/vue";
+
 export default {
   name: 'Page500',
+  components: {CButton, CFormInput, CInputGroupText, CInputGroup, CCol, CRow, CContainer},
 }
 </script>

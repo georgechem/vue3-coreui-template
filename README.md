@@ -1,3 +1,9 @@
+## After cloning project and installing dependencies run:
+
+>git reset --hard
+
+above fix is for typescript type-checking which resulting in errors in files managed by core ui internally (those errors are not affecting application itself and even if not fixed project will still runs)
+
 # vue3-coreui-template
 
 This template should help get you started developing with Vue 3 in Vite.
